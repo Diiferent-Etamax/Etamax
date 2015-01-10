@@ -5,6 +5,14 @@
 <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="style/style.css" rel="stylesheet" type="text/css">
 <link href="style/animate.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+<script>
+$(document).ready(function(){
+  $("div").click(function(){
+    $("a").addClass("active");
+  });
+});
+</script>
 </head>
 
 <body>
@@ -12,13 +20,30 @@
 <div class="img3">
 	<img class="scaleIn" src="img/etamax.png">
 </div>
+<div class="Onclickevent left-events" id="technical">
+<a href="" >Technical Events</a>
+</div>
+<div class="Onclickevent left-events" id="cultural">
+<a href="" >Cultural Events</a>
+</div>
+<div class="Onclickevent left-events" id="about-us">
+<a href="" >About Us</a>
+</div>
+<div class="Onclickevent right-events" id="gallery">
+<a href="" >Gallery</a>
+</div>
+<div class="Onclickevent right-events" id="register" >
+<a href="" >Register</a>
+</div>
+<div class="Onclickevent right-events" id="contact" >
+<a href="" >Contact</a>
+</div>
 <div class="img2" >
 	<img class="rotate-left" src="img/compass2.png">
 </div>
 <div class="img1"  id="front" >
 	<img class="rotate-right" src="img/circle.png">
 </div>
-
 
 </div>
 </body>
