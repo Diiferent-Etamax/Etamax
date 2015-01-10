@@ -1,0 +1,220 @@
+body {
+background-image:url('http://localhost/Etamax/img/bg.jpg'); 
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+#container {
+	position: fixed;
+	margin-left: 458px;
+	margin-top: 100px;
+}
+.img1 {
+	position: absolute;
+	height:450px;
+	width:450px;
+	z-index:3;
+}
+.img2 {
+	position: absolute;
+	height:450px;
+	width:450px;
+	z-index:4;
+}
+.img3 {
+	position: absolute;
+	height:450px;
+	width:450px;
+	z-index:5;
+}
+
+.img1>.rotate-right {
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.img2>.rotate-left {
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.img3>.scaleIn {
+	-webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+}
+.img3:hover {
+	-webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+.img3:hover  ~ .img1>.rotate-right {
+	-webkit-transform: rotate(360deg) scale(1.05,1.05);
+    -moz-transform: rotate(360deg) scale(1.05,1.05);
+    -o-transform: rotate(360deg) scale(1.05,1.05);
+    -ms-transform: rotate(360deg) scale(1.05,1.05);
+    transform: rotate(360deg) scale(1.05,1.05);
+}
+.img3:hover  ~ .img2>.rotate-left {
+	-webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+
+
+.rotate-right{
+animation: animationFrames 2s linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames  2s linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames  2s linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames  2s linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames  2s linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+.rotate-left{
+animation: animationFrames  2s linear 1s reverse;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames  2s linear 1s reverse;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames  2s linear 1s reverse;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames  2s linear 1s reverse;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames  2s linear 1s reverse;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:rotate(0deg);
+  }
+  100% {
+    -moz-transform:   rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  rotate(0deg);
+  }
+  100% {
+    -webkit-transform:  rotate(360deg);
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  rotate(0deg);
+  }
+  100% {
+    -o-transform:  rotate(360deg);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform:  rotate(0deg);
+  }
+  100% {
+    -ms-transform:  rotate(360deg);
+  }
+}
+
+.scaleIn{
+animation: scales 2s linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: scales 2s linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: scales 2s linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: scales 2s linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: scales 2s linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes scales{
+  0% {
+	opacity: 0;
+    transform: scale(0,0) translate(0,-1000px);
+  }
+  100% {
+  opacity: 1;
+    transform: scale(1,1);
+  }
+}
+
+@-moz-keyframes scales{
+  0% {
+    -moz-transform:scale(0,0) translate(0,-1000px);
+  }
+  100% {
+    -moz-transform: scale(1,1) ;
+  }
+}
+
+@-webkit-keyframes scales {
+  0% {
+    -webkit-transform: scale(0,0) translate(0,-1000px);
+  }
+  100% {
+    -webkit-transform: scale(1,1) ;
+  }
+}
+
+@-o-keyframes scales {
+  0% {
+    -o-transform: scale(0,0) translate(0,-1000px);
+  }
+  100% {
+    -o-transform: scale(1,1) ;
+  }
+}
+
+@-ms-keyframes scales {
+  0% {
+    -ms-transform:  scale(0,0) translate(0,-1000px);
+  }
+  100% {
+    -ms-transform:  scale(1,1) ;
+  }
+}
+
