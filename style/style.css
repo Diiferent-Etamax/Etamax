@@ -1,24 +1,29 @@
 body {
 background-image:url('../img/bg.jpg'); 
-background-repeat: no-repeat;
+max-width:100%;
+height:auto;
+width:auto;
+background-repeat: repeat;
 background-size: cover;
-
-
+background-color: #060606;
 }
-#container {
-	position: relative;
-	display:inline-block;
-	margin-left:450px;
-	margin-top:100px;
-	height:780px;
-	width:1092px;
+#image {
+	position: absolute;
+	float: left;
+	margin-left:25%;
+	margin-top: 10%;
+}
+img{
+	max-width:100%;
+	height:auto;
+	width:auto;
+
 }
 .img1 {
-	position: relative;
-	display:inline-block;
-	margin : 0 auto;
-	height:450px;
-	width:450px;
+	position: absolute;
+	max-width:100%;
+	height:auto;
+	width:auto;
 	z-index:3;
 }
 .img2 {
